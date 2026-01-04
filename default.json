@@ -1,19 +1,12 @@
 {
-  "description": "Base Renovate config",
   "extends": ["config:recommended"],
-  "schedule": ["before 8am on Monday"],
+  "schedule": ["after 8am on Sunday"],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 2,
   "labels": ["auto-deps"],
   "packageRules": [
-    {
-      "updateTypes": ["patch","minor"],
-      "automerge": true
-    },
-    {
-      "updateTypes": ["major"],
-      "automerge": false
-    }
+    { "updateTypes": ["patch","minor"], "automerge": true },
+    { "updateTypes": ["major"], "automerge": false }
   ],
-  "securityUpdates": {"enabled": true}
+  "securityUpdates": { "enabled": true }
 }
