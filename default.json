@@ -1,12 +1,17 @@
 {
-  "extends": ["config:recommended"],
-  "schedule": ["after 8am on Sunday"],
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor"
+  ],
+  "schedule": ["every 12 hours"],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 2,
   "labels": ["auto-deps"],
   "packageRules": [
-    { "updateTypes": ["patch","minor"], "automerge": true },
-    { "updateTypes": ["major"], "automerge": false }
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
   ],
   "securityUpdates": { "enabled": true }
 }
