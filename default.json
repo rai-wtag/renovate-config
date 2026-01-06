@@ -23,5 +23,12 @@
   ],
   "vulnerabilityAlerts": {
     "enabled": true
-  }
+  },
+  "hostRules": [
+    {
+      "matchHost": "repo.maven.apache.org",
+      "token": null,
+      "abortOnError": true
+    }
+  ]
 }
