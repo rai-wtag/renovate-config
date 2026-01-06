@@ -3,7 +3,7 @@
     "config:recommended",
     "group:allNonMajor"
   ],
-  "schedule": ["every 12 hours"],
+  "schedule": ["at any time"],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 2,
   "labels": ["auto-deps"],
